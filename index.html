@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodge the Falling Rocks - Smiley Version</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <p>Score: <span id="score">0</span></p>
+    </div>
+    <div class="powerup-notice" id="powerup-notice">Press "S" to buy power-ups!</div>
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu" id="menu">
+            <button onclick="resumeGame()">Resume</button>
+            <button onclick="openShop()">Shop</button>
+            <button onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+    <div class="game-container" id="game-container">
+        <div id="player" class="player"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
